@@ -1,0 +1,21 @@
+<!doctype html><html lang="ko"><meta charset="utf-8">
+<link rel="stylesheet" href="base.css"><link rel="stylesheet" href="point.css">
+<style>
+/* 본문 4줄 → 라인박스 120 · 사진1 끝 661 +23.5 → 684.5~804.5 → +23.5 → 사진2 828
+   사진2는 원본 4:3 그대로 (610 × 458) — 크롭·확대 없음 → 블록 1286 */
+.blk{height:1286px}
+#ph1{object-position:center 50%}
+#t1{top:684.5px} #t2{top:714.5px} #t3{top:744.5px} #t4{top:774.5px}
+#ph2{top:828px;height:458px;object-fit:contain;background:var(--cream)}
+</style>
+<div class="blk">
+  <div id="pill">POINT 1</div>
+  <span class="t l hd h1" id="h1">손질도 끝 삶기도 끝</span>
+  <span class="t l hd h1" id="h2">바로 쓰는 우렁이살</span>
+  <img class="ph" id="ph1" src="img/p1a.jpg" alt="">
+  <div class="bl" id="t1"><mark>껍질 제거부터 깔끔한 손질, 자숙까지</mark><span>&nbsp;완료한</span></div>
+  <div class="bl" id="t2"><span>담양 손질 우렁이살로 간편하게 즐겨보세요.</span></div>
+  <div class="bl" id="t3"><mark>별도의 손질 과정 없이 냉동실에서 꺼내</mark></div>
+  <div class="bl" id="t4"><span>바로 다양한 요리에 활용하실 수 있습니다.</span></div>
+  <img class="ph" id="ph2" src="img/p1b.jpg" alt="">
+</div>

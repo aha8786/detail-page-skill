@@ -1,0 +1,15 @@
+/* point 블록 공통 — 블록 높이는 각 HTML에서 지정 */
+.blk{background:var(--cream)}
+#pill{position:absolute;left:48px;top:48px;width:106px;height:36px;border-radius:18px;
+      background:var(--charcoal);color:var(--cream);
+      font-family:'Paperlogy-7Bold',sans-serif;font-size:19px;line-height:36px;
+      text-align:center;letter-spacing:.01em}
+.hd{font-size:55px;color:var(--charcoal);letter-spacing:-.02em}
+#h1{top:100.2px} #h2{top:164.2px}
+#ph1{top:243px;height:418px}
+/* 본문 라인박스 30px · 상하 여백 23.5 동일 (TOOL 1장) */
+.bl{position:absolute;left:48px;height:30px;white-space:nowrap}
+.bl span,.bl mark{display:inline-block;height:30px;line-height:30px;vertical-align:top;
+         font-family:'Paperlogy-6SemiBold',sans-serif;font-size:26px;letter-spacing:-.01em}
+.bl span{color:var(--charcoal)}
+.bl mark{background:var(--charcoal);color:var(--cream);padding:0 5px}

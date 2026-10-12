@@ -1,0 +1,22 @@
+/* 상세페이지 공통 토큰 — TOOL.md v0.5 */
+:root{
+  --charcoal:#292929;          /* 다크 배경 · 라이트 블록 텍스트 · 필/하이라이트 */
+  --cream:#F5F0E6;             /* 라이트 배경 · 다크 블록 텍스트 · 배지 필 */
+  --warmgray:#8C867C;          /* 아이브로우 · 면책 */
+  --overlay:rgba(0,0,0,.55);
+  --pad:48px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:610px}
+body{position:relative;overflow:hidden;
+  -webkit-font-smoothing:antialiased;
+  font-family:'Paperlogy-6SemiBold',sans-serif}
+.blk{position:relative;width:610px;overflow:hidden}
+.t{position:absolute;white-space:nowrap;line-height:1}
+.c{left:0;width:610px;text-align:center}
+.l{left:var(--pad)}
+.h1{font-family:'Paperlogy-9Black',sans-serif}
+.bd{font-family:'Paperlogy-7Bold',sans-serif}
+.sb{font-family:'Paperlogy-6SemiBold',sans-serif}
+.md{font-family:'Paperlogy-5Medium',sans-serif}
+img.ph{position:absolute;left:0;width:610px;object-fit:cover;display:block}

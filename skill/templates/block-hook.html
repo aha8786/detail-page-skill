@@ -1,0 +1,59 @@
+<!doctype html><html lang="ko"><meta charset="utf-8">
+<link rel="stylesheet" href="base.css">
+<style>
+.blk{height:1000px;background:var(--charcoal)}
+#photo{top:485px;height:515px;object-position:center 50%}
+#fade{position:absolute;left:0;top:485px;width:610px;height:200px;
+      background:linear-gradient(180deg,#292929 0%,rgba(41,41,41,.88) 28%,
+                 rgba(41,41,41,.55) 55%,rgba(41,41,41,.22) 78%,rgba(41,41,41,0) 100%)}
+#vig{position:absolute;left:0;top:485px;width:610px;height:515px;pointer-events:none;
+     background:radial-gradient(120% 78% at 50% 62%,rgba(41,41,41,0) 42%,rgba(41,41,41,.38) 100%)}
+.sub{font-size:19px;color:var(--cream);letter-spacing:-.01em}
+#s1{top:154.7px} #s2{top:177.7px}
+.hd{font-size:84px;color:var(--cream);letter-spacing:-.03em;
+    text-shadow:0 4px 14px rgba(0,0,0,.45)}
+#h1{top:233.1px} #h2{top:331.1px}
+.bg{position:absolute;top:460px;width:137px;height:137px;border-radius:50%;
+    background:linear-gradient(180deg,#FFFDF7 0%,#F5F0E6 42%,#DED5C0 100%);
+    border:1px solid rgba(255,255,255,.55);
+    box-shadow:
+      0 14px 26px rgba(0,0,0,.50),
+      0 4px 8px rgba(0,0,0,.34),
+      inset 0 3px 4px rgba(255,255,255,.98),
+      inset 0 -5px 9px rgba(120,104,76,.30),
+      inset 0 0 0 1px rgba(255,255,255,.35)}
+#b1{left:77px} #b2{left:236.5px} #b3{left:396px}
+.ic{position:absolute;top:33px;left:32.5px;width:72px;height:50px}
+.lb{position:absolute;top:95.8px;left:0;width:137px;text-align:center;
+    font-size:17px;line-height:1;color:var(--charcoal);letter-spacing:-.02em}
+</style>
+<div class="blk">
+  <img class="ph" id="photo" src="img/hook.jpg" alt="">
+  <div id="fade"></div>
+  <div id="vig"></div>
+  <span class="t c sub bd" id="s1">쫄깃하게 씹히는 식감 그대로</span>
+  <span class="t c sub bd" id="s2">껍질제거 자숙완료로 손질 끝!</span>
+  <span class="t c hd h1" id="h1">국내산</span>
+  <span class="t c hd h1" id="h2">담양 우렁이살</span>
+  <div class="bg" id="b1">
+    <svg class="ic" viewBox="0 0 72 50" fill="none" stroke="#292929" stroke-width="3.2"
+         stroke-linecap="round" stroke-linejoin="round">
+      <path d="M36 6c-7.2 0-13 5.6-13 12.6 0 9.4 13 22.4 13 22.4s13-13 13-22.4C49 11.6 43.2 6 36 6z"/>
+      <circle cx="36" cy="18.4" r="4.6"/><path d="M18 44h36"/>
+    </svg><span class="lb bd">담양산지</span>
+  </div>
+  <div class="bg" id="b2">
+    <svg class="ic" viewBox="0 0 72 50" fill="none" stroke="#292929" stroke-width="3.2"
+         stroke-linecap="round" stroke-linejoin="round">
+      <path d="M28 10c2.6-2.6 2.6-5.4 0-8M36 10c2.6-2.6 2.6-5.4 0-8M44 10c2.6-2.6 2.6-5.4 0-8"/>
+      <path d="M18 19h36v11a13 13 0 0 1-13 13h-10a13 13 0 0 1-13-13V19z"/>
+      <path d="M54 22h5a4 4 0 0 1 0 8h-5M18 22h-5a4 4 0 0 0 0 8h5"/>
+    </svg><span class="lb bd">자숙완료</span>
+  </div>
+  <div class="bg" id="b3">
+    <svg class="ic" viewBox="0 0 72 50" fill="none" stroke="#292929" stroke-width="3.2"
+         stroke-linecap="round" stroke-linejoin="round">
+      <path d="M24 13h24l3 30H21l3-30z"/><path d="M24 13l2-6h20l2 6"/><path d="M31 24h10"/>
+    </svg><span class="lb bd">소량포장</span>
+  </div>
+</div>
