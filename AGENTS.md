@@ -21,8 +21,8 @@ detail page · product detail · 상세컷 · 상세 디자인
 상세페이지 스킬이 켜졌습니다. 무엇을 할까요?
 
   /상세페이지 만들기     기획부터 블록별 PNG 출력까지 전 과정
-  /블록카피하기          레퍼런스 블록을 픽셀 측정해 내 규격으로 복제
-  /상세페이지 분석하기    완성된 페이지의 구조·법규·가독성 진단
+  /블록카피하기          블록 1장을 픽셀 측정해 기존 구조에 추가
+  /상세페이지 분석하기    레퍼런스 페이지를 분석해 새 블록 구조로 등록
 
 번호나 명령어로 골라 주세요.
 ```
@@ -30,9 +30,23 @@ detail page · product detail · 상세컷 · 상세 디자인
 ## 명령 → 읽을 파일
 
 ```
-/상세페이지 만들기    skill/TOOL.md + skill/01-create.md
-/블록카피하기         skill/TOOL.md + skill/02-block-copy.md
+/상세페이지 만들기    skill/TOOL.md + presets/_index.md + skill/01-create.md
+/블록카피하기         skill/TOOL.md + presets/_index.md + skill/02-block-copy.md
 /상세페이지 분석하기   skill/TOOL.md + skill/03-analyze.md
+```
+
+## 프리셋 구조
+
+```
+skill/TOOL.md     고정 규격. 항상 적용. 프리셋과 충돌하면 이쪽이 이긴다
+presets/_index.md 블록 구조 카탈로그
+presets/<id>/     PRESET.md(수치) · blocks/(템플릿) · references/(측정 근거) · preview/
+```
+
+```
+레퍼런스 페이지 ──/상세페이지 분석하기──▶ 프리셋 등록
+블록 1장       ──/블록카피하기────────▶ 프리셋에 블록 추가
+상품 정보+사진  ──/상세페이지 만들기───▶ 블록별 PNG  (1단계에서 프리셋 선택)
 ```
 
 ## 환경 요구사항
@@ -54,3 +68,5 @@ python3 -m venv .venv && ./.venv/bin/pip install pillow
 3. 식품이면 광고 법규를 기획·출력 두 단계에서 검사한다
 4. 사용자가 지정한 사진·카피는 임의로 바꾸지 않는다
 5. 블록은 독립 PNG로 낸다
+6. 프리셋을 고르지 않고 제작에 들어가지 않는다
+7. 레퍼런스를 그대로 베끼지 않는다. 고정 규격이 우선이다
